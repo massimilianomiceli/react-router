@@ -40,6 +40,8 @@ export default function Prodotto(){
                 <p className="card-text">{prodotto.description}</p>
             </div>
         </div>
+        <button onClick={() => navigate(`/Prodotti/${prodotto.id - 1}`)}>Indietro</button>
+        <button onClick={() => navigate(`/Prodotti/${prodotto.id + 1}`)}>Avanti</button>
         </>
     )
 }
